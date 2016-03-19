@@ -1,0 +1,5 @@
+.idea/
+bin/
+composer.phar
+vendor/
+phpunit.xml
