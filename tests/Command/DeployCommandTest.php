@@ -16,7 +16,6 @@ class DeployCommandTest extends \PHPUnit_Framework_TestCase
     public function testExecute()
     {
         $application = new Application();
-        $application->add(new DeployCommand());
 
         $command = $application->find('deploy');
         $commandTester = new CommandTester($command);

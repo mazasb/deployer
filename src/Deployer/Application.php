@@ -7,7 +7,6 @@
 
 namespace Deployer;
 
-use Deployer\Configuration\ApplicationProvider;
 use Deployer\DependencyInjection\ContainerAwareInterface;
 use Pimple\Container;
 use Symfony\Component\Console\Command\Command;
@@ -28,6 +27,7 @@ class Application extends \Symfony\Component\Console\Application
      */
     public function __construct($name, $version, Container $container)
     {
+        // TODO: strict standards parent construct?
         parent::__construct($name, $version);
 
         $this->addCommands($container['commands']);

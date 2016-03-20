@@ -24,7 +24,10 @@
         "phpunit/phpcov": "3.*"
     },
     "autoload": {
-        "psr-4": { "": "src/" }
+        "psr-4": { "Deployer\\": "src/Deployer/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\": "tests/" }
     },
     "config": {
         "bin-dir": "bin"
